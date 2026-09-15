@@ -59,15 +59,20 @@ bool esteVocala(char c) {
     return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
 void rezolvare5(){
-     char cuvant[21];
-
-    cin >> cuvant;
+     char cuvant[100];
+     char cuvantNou[100];
+     int poz=0;
+     cin >> cuvant;
 
     for (int i = 0; i < strlen(cuvant); i++) {
+         cuvantNou[poz]=cuvant[i];
+          poz++;
         if (esteVocala(cuvant[i])) {
-            cout << cuvant[i];
+             cuvantNou[poz]=cuvant[i]-32;
+             poz++;
         }
     }
+    cout<<cuvantNou<<endl;
 }
 
 /*
@@ -102,6 +107,119 @@ f(0) = 0
 
 Se afișează 5310135
 */
+
+
+/*
+3. Fişierul text NR.TXT conţine pe o singură linie, separate prin câte un spaţiu, cel mult 100 de
+numere întregi, fiecare număr având cel mult 4 cifre. Scrieţi un program C/C++ care citeşte
+numerele din fişierul NR.TXT şi afişează pe ecran, separate prin câte un spaţiu, în ordine
+crescătoare, toate numerele naturale nenule din fişier. Dacă nu există astfel de numere se
+va afişa pe ecran mesajul NU EXISTA.
+Exemplu: dacă fişierul NR.TXT conţine numerele: -3 -10 0 7 -5 7 51 -800 6 3798,
+atunci pe ecran se va afişa: 6 7 7 51 3798
+*/
+
+void citire3(int v[],int &n){
+    ifstream f("NR.TXT");
+    int a=0;
+    if(f.is_open()){
+        while(f>>v[n]){
+            n++;
+        }
+        for(int i=0;i<n;i++){
+            if(v[i]>0){
+              cout<<v[i]<<" ";
+              a=1;
+            }
+        }
+        f.close();
+    }else{
+        cout<<"Fisierul nu s-a putut deschide!";
+    }
+    if(a==0){
+        cout<<"NU EXISTA!";
+    }
+}
+
+void afisare3(int v[],int n){
+    bool ok=false;
+    for(int i=0;i<n;i++){
+        if(v[i]>0){
+            cout<<v[i]<<" ";
+            ok=true;
+        }
+    }
+    if(ok==false){
+      cout<<"NU EXISTA";
+    }
+}
+
+
+void sortareCresc(int v[],int n){
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(v[i]>v[j]){
+            int aux=v[i];
+            v[i]=v[j];
+            v[j]=aux;
+            }
+        }
+    }
+}
+
+void rez3(){
+    int v[100],n;
+    citire3(v,n);
+    cout<<endl;
+    sortareCresc(v,n);
+    cout<<"dupa sortare"<<endl;
+    afisare3(v,n);
+}
+
+/*
+4.Un număr n se numeşte extraprim dacă atât el, cât şi orice număr obţinut prin permutarea
+cifrelor lui n, sunt numere prime. De exemplu, numărul 113 este un număr extraprim
+deoarece 113, 311, 131 sunt numere prime.
+a) Scrieţi definiţia completă a unui subprogram f, cu un parametru, subprogram care:
+- primeşte prin intermediul parametrului a un număr natural cu cel mult 3 cifre (a>1)
+- returnează suma tuturor exponenţilor din descompunerea în factori primi a valorii
+parametrului a.
+Exemplu: pentru a=90 subprogramul va returna valoarea 4, deoarece a=2*32
+*5 şi
+1+2+1=4.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

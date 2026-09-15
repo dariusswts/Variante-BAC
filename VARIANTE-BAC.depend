@@ -1,8 +1,12 @@
 # depslib dependency file v1.0
-1788881575 source:c:\mycode\variante-bac\main.cpp
+1789486503 source:c:\mycode\variante-bac\main.cpp
 	<iostream>
-	"varianta-1.h"
+	"temaVar2.h"
 
 1788882241 c:\mycode\variante-bac\varianta-1.h
 	<iostream>
+
+1789487235 c:\mycode\variante-bac\temavar2.h
+	<fstream>
+	<string.h>
 
