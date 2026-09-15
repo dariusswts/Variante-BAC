@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1788881575 source:c:\mycode\variante-bac\main.cpp
+	<iostream>
+	"varianta-1.h"
+
+1788882241 c:\mycode\variante-bac\varianta-1.h
+	<iostream>
+
