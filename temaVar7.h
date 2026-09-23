@@ -39,7 +39,7 @@ afişat pe ecran.
 Exemplu: dacă de la tastatură se introduce textul: mare frig rosu
 se va afişa pe ecran: Mare Frig Rosu
 */
-void transformaVar6(char s[])
+void Var7Rez5(char s[])
 {
     s[0]=s[0]-'a'+'A';
 
@@ -49,11 +49,11 @@ void transformaVar6(char s[])
         }
     }
 }
-int rezVar6()
+int rezVar7()
 {
     char s[256];
     cin.getline(s,256);
-    transformaVar6(s);
+    Var7Rez5(s);
     cout << s;
 
 }

@@ -1,13 +1,10 @@
-#include <iostream>
-#include "temaVar8.h"
-#include <iostream>
-#include <fstream>
-#include <string.h>
-using namespace std;
+
+#include "Var9.h"
+#include "temaVar2.h"
 
 
 
 int main()
 {
-
+    rezolvare5();
 }

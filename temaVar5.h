@@ -67,7 +67,7 @@ cu ultimul, al doilea cu penultimul, etc). (6p.)
 
 //2. Pentru subprogramul f definit mai jos, ce se afişează ca urmare a apelului f(3,17)?(6p.)
 //C++
-void f ( int a, int b)
+void Var5f ( int a, int b)
 { if(a<=b)
  { f(a+1,b-2); cout<<’*’;}
  else cout<<b;
@@ -90,7 +90,7 @@ valorii lor.
 Exemplu: pentru n=10305 fişierul NR.TXT va conţine numerele:
 10305 1030 103 10 1 (10p.)
 */
-void rezolvare3(){
+void Var5Rez3(){
     int n;
     cin>>n;
 
@@ -134,10 +134,8 @@ Scrieți un program C/C++ care citește două numere naturale n și m, cu 2≤n,
 Matricea se afișează cu elementele separate prin câte un spațiu.
 */
 
-void construireVar5()
-{
-    for (int i=1;i<=n;i++)
-    {
+void construireVar5(int A[11][11],int n,int m){
+    for (int i=1;i<=n;i++){
         for (int j=1;j<=m;j++)
         {
             if (i>j){
@@ -150,7 +148,7 @@ void construireVar5()
     }
 }
 
-void afisareVar5()
+void afisareVar5(int A[11][11],int n,int m)
 {
     for (int i=1; i<=n;i++)
     {

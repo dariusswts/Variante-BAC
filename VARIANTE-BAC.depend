@@ -1,19 +1,21 @@
 # depslib dependency file v1.0
-1790170445 source:c:\mycode\variante-bac\main.cpp
-	<iostream>
-	"temaVar8.h"
-	<iostream>
-	<fstream>
-	<string.h>
+1790176324 source:c:\mycode\variante-bac\main.cpp
+	"Var9.h"
+	"temaVar2.h"
 
 1788882241 c:\mycode\variante-bac\varianta-1.h
 	<iostream>
 
-1790167302 c:\mycode\variante-bac\temavar2.h
+1790176318 c:\mycode\variante-bac\temavar2.h
 	<fstream>
 	<string.h>
 
 1790170433 c:\mycode\variante-bac\temavar8.h
+	<iostream>
+	<fstream>
+	<string.h>
+
+1790175519 c:\mycode\variante-bac\var9.h
 	<iostream>
 	<fstream>
 	<string.h>

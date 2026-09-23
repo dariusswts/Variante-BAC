@@ -72,6 +72,7 @@ void rezolvare5(){
              poz++;
         }
     }
+    cuvantNou[poz]='\0';
     cout<<cuvantNou<<endl;
 }
 
@@ -193,7 +194,7 @@ folosind apeluri utile ale subprogramului f, verifică dacă n este un număr ex
 afirmativ, programul afişează pe ecran mesajul DA, în caz contrar afişând mesajul NU.
 */
 
-int f(int a){
+int Var2f(int a){
 
 }
 

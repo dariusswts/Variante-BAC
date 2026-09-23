@@ -56,15 +56,15 @@ Se afișează:599350
 subprogramului f, ce se afişează ca
 urmare a apelului f(26);? (6p.)
 */
-void f (int x)
+void Var3f (int x)
 {
     if(x>0)
      if(x%4==0){
-        cout<<’x’; | printf(”%c”,’x’);
+        cout<<’x’;
            f(x-1); }
     else
     { f(x/3);
-    cout<<"y"; | printf(”%c”,’y’);
+    cout<<"y";
     }
 }
 /*
@@ -151,7 +151,7 @@ s = "ideale"
 
 vreau o rezolvare simpla pt astea
 */
-void rezol5(){
+void Var3Rez5(){
     int n,a[25][25];
     cin>>n;
 
@@ -209,7 +209,7 @@ void afisareVar3(int v[],int n)
             cout<<v[i]<<" ";
         }
 }
-void rezolvare3(){
+void Var3Rez3(){
     int v[100],n=0,a[100],m=0;
     citireVar3(v,n);
     for(int i=0;i<n;i++){
@@ -229,7 +229,7 @@ numărul de apariţii ale cifrei b în scrierea numărului a.
 Exemplu: pentru a=125854 şi b=5, subprogramul va returna valoarea 2.
 a) Scrieţi definiţia completă a subprogramului cif.
 */
-int cif(int a,int b)
+int cifEx4(int a,int b)
 {
     int nr=0;
 

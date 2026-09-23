@@ -75,7 +75,7 @@ afişat pe ecran.
 Exemplu: dacă de la tastatură se introduce textul: mare frig rosu
 se va afişa pe ecran: Mare Frig Rosu
 */
-void transformaVar6(char s[])
+void Var6Rez6(char s[])
 {
     s[0]=s[0]-'a'+'A';
 
@@ -90,7 +90,7 @@ int rezVar6()
 {
     char s[256];
     cin.getline(s,256);
-    transformaVar6(s);
+    Var6Rez6(s);
     cout << s;
 
 }
