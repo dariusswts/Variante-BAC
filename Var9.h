@@ -98,9 +98,69 @@ b. cin>>a.x>>b.x;
 c. cin>>x;
 d. cin>>a->x>>b->x;
 
+raspuns A.cin>>x.a>>x.b;
 
+
+ 4. Se consideră declararea de mai jos:
+char s[50], x[50];
+Ce se afişează în urma executării secvenţei de
+program scrisă alăturat dacă variabila s memorează
+şirul abcdefg? (6p.)
+strcpy(x,s+4);
+strcpy(s+4,”123”);
+strcat(s,x);
+cout<<s; | printf(”%s”,s);
+
+
+abcdefg
+
+strcpy(x,s+4)= x=efg
+strcpy(s+4,"123")= s=abcd123
+strcat(s,x) = s="abcd123efg"
+cout<<s;
+afiseaza: abcd123efg
+
+1. Se consideră subprogramul f cu definiţia
+alăturată. Ce valoare are f(1213111,1)?
+a. 5 b. 3 c. 2 d. 1
 
 */
+int Var9f (long n, int k){
+  if (n!=0)
+    if(n%10==k)
+      return 1+Var9f(n/10,k);
+    else return 0;
+ else return 0;
+ }
+
+/*
+ n=1213111 k=1
+
+ n%10==k ret 1+f(n/10,k)
+   1==1       1+f(121311,1)
+   1==1       1+f(12131,1)
+   1==1       1+f(1213,1)
+   3!=1       ret 0;
+
+   afisare 1+1+1+0=3;
+
+*/
+
+/*
+ 3. Scrieţi definiţia completă a subprogramului sub cu doi parametri: n (număr natural,
+0<n≤50) şi k (număr natural, 0<k≤20). Subprogramul determină afişarea pe o linie nouă a
+ecranului, în ordine descrescătoare, a primelor n numere naturale nenule divizibile cu k.
+Numerele vor fi separate prin câte spaţiu.
+Exemplu: dacă n=3 şi k=5 la apelul subprogramului se va afişa pe ecran:
+15 10 5
+*/
+void Var9sub(int n,int k){
+    for(int i=n;i>=1;i--){
+        cout<<i*k<<" ";
+    }
+}
+
+
 
 
 

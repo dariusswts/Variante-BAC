@@ -6,5 +6,5 @@
 
 int main()
 {
-    rezolvare5();
+    Var9sub(3,5);
 }

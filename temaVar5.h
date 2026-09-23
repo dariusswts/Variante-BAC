@@ -68,8 +68,10 @@ cu ultimul, al doilea cu penultimul, etc). (6p.)
 //2. Pentru subprogramul f definit mai jos, ce se afişează ca urmare a apelului f(3,17)?(6p.)
 //C++
 void Var5f ( int a, int b)
-{ if(a<=b)
- { f(a+1,b-2); cout<<’*’;}
+{
+    if(a<=b){
+      f(a+1,b-2); cout<<’*’;
+      }
  else cout<<b;
 }
 /*
@@ -77,8 +79,9 @@ void Var5f ( int a, int b)
 4<=15 da f(5,13) *
 5<=13 da f(6,11) *
 6<=11 da f(7,9)  *
-7<=9 da  f(8,7)
-reaspuns ****
+7<=9 da  f(8,7)  *
+8<=7 nu   cout<<b==7
+reaspuns 7****
 */
 
 
