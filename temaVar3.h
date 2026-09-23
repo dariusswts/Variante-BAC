@@ -112,6 +112,141 @@ int cif(int a, int b)
     return cnt;
 }
 
+/*
+4.În secvenţa de instrucţiuni de mai jos, variabila s memorează un şir de caractere format
+doar din litere ale alfabetului englez, iar variabilele i şi n sunt de tip int. Ştiind că în urma
+executării secvenţei s-a afişat succesiunea de caractere eied*eael* scrieţi care este
+şirul de caractere memorat de variabila s. (6p.)
+//C++
+n=strlen(s);
+for(i=0;i<n;i++)
+ if (s[i]==’e’) cout<<’*’;
+ else cout<<'e'<<s[i];
+
+Secvență afișată	s[i]
+    ei	              i
+ed	                  d
+*	                  e
+ea	                  a
+el	                  l
+*	                  e
+
+
+s = "ideale"
+
+
+
+
+5. Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n (2≤n≤24) şi
+   construieşte în memorie o matrice cu n linii şi n coloane ale cărei elemente vor primi valori
+   după cum urmează:
+
+- elementele aflate pe diagonala principală a matricei vor primi valoarea 0
+- elementele de pe prima coloană, cu excepţia celui aflat pe diagonala principală vor primi
+  valoarea n
+- elementele de pe a doua coloană, cu excepţia celui aflat pe diagonala principală vor primi
+  valoarea n-1
+  ...
+- elementele de pe ultima coloană, cu excepţia celui aflat pe diagonala principală vor primi valoarea 1 Programul va afişa matricea astfel construită pe ecran, câte o linie a matricei pe câte o linie a ecranului, cu câte un spaţiu între elementele fiecărei linii (ca în exemplu). Exemplu: pentru n=4 se va afişa matricea alăturată &#x20;
+
+vreau o rezolvare simpla pt astea
+*/
+void rezol5(){
+    int n,a[25][25];
+    cin>>n;
+
+    for(int i=0;i<n;i++)
+        for(int j=0;j<n;j++)
+            if(i==j)
+                a[i][j]=0;
+            else
+                a[i][j]=n-j;
+
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+            cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
+}
+
+/*
+3. Fişierului text NR.TXT conţine pe o singură linie, separate prin câte un singur spaţiu, cel
+mult 100 de numere naturale, fiecare număr având cel mult 4 cifre. Scrieţi un program
+C/C++ care citeşte toate numerele din fişierul NR.TXT şi afişează pe ecran, separate prin
+câte un spaţiu, în ordine crescătoare, toate numerele din fişier care au cel puţin 3 cifre.
+Dacă fişierul nu conţine astfel de numere se va afişa pe ecran mesajul NU EXISTA.
+*/
+
+void citireVar3(int v[],int &n)
+{
+    ifstream f("NR.TXT");
+    n=0;
+    while(f>>v[n]){
+        n++;
+    }
+
+    f.close();
+}
+
+void sortareVar3(int v[],int n)
+{
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(v[i]>v[j]){
+                swap(v[i],v[j]);
+            }
+        }
+    }
+}
+
+void afisareVar3(int v[],int n)
+{
+    if(n==0){
+        cout<<"NU EXISTA";
+    }else
+        for(int i=0;i<n;i++){
+            cout<<v[i]<<" ";
+        }
+}
+void rezolvare3(){
+    int v[100],n=0,a[100],m=0;
+    citireVar3(v,n);
+    for(int i=0;i<n;i++){
+        if(v[i]>=100){
+           a[m]=v[i];
+         m++;
+        }
+    }
+
+    sortareVar3(a,m);
+    afisareVar3(a,m);
+}
+/*
+4. Subprogramul cif, cu doi parametri, primeşte prin intermediul parametrului a un număr
+natural cu cel mult 8 cifre şi prin intermediul parametrului b o cifră; subprogramul returnează
+numărul de apariţii ale cifrei b în scrierea numărului a.
+Exemplu: pentru a=125854 şi b=5, subprogramul va returna valoarea 2.
+a) Scrieţi definiţia completă a subprogramului cif.
+*/
+int cif(int a,int b)
+{
+    int nr=0;
+
+    while(a>0)
+    {
+        if(a%10==b)
+            nr++;
+        a=a/10;
+    }
+
+    return nr;
+}
+
+
+
+
+
 
 
 #endif // TEMAVAR3_H_INCLUDED

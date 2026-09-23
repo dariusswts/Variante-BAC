@@ -175,6 +175,7 @@ void rez3(){
     cout<<"dupa sortare"<<endl;
     afisare3(v,n);
 }
+//2^3*3^2*5^7  suma exponentiilor este => 3+2+7
 
 /*
 4.Un număr n se numeşte extraprim dacă atât el, cât şi orice număr obţinut prin permutarea
@@ -187,12 +188,35 @@ parametrului a.
 Exemplu: pentru a=90 subprogramul va returna valoarea 4, deoarece a=2*32
 *5 şi
 1+2+1=4.
+b) Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n, 2≤n≤999 şi,
+folosind apeluri utile ale subprogramului f, verifică dacă n este un număr extraprim. În caz
+afirmativ, programul afişează pe ecran mesajul DA, în caz contrar afişând mesajul NU.
 */
 
+int f(int a){
 
+}
 
-
-
+/*
+2. Pentru definiţia de mai jos a subprogramului f, ce se afişează ca urmare a apelului
+f(12345);? (6p.)
+*/
+//C++
+/*
+void f(long n)
+{ cout<<n%10;
+ if(n!=0)
+ { f(n/100); cout<<n%10;}
+}
+*/
+/*
+n	   n%10   	  Afișare la început	   Afișare după recursivitate
+12345	5	            5	                           5
+123	    3	            3	                           3
+1	    1               1                   	       1
+0       0               0                              --
+Rezultat: 5310135
+*/
 
 
 

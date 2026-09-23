@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-///SUB 1
 /*
 1. Variabila x este de tip real. Care dintre următoarele expresii C/C++ are valoarea 1 dacă şi
 numai dacă numărul real memorat în variabila x aparţine intervalului (5,8]? (4p.)
@@ -9,7 +8,7 @@ a. (x<8) && (x>=5) b. (x<=8) || (x>5)
 c. (x>8) || (x<=5) d. (x<=8) && (x>5)
 x>5 si x<=8 raspuns B
 */
-///SUB 2
+
 /*
 3. În declararea alăturată, câmpurile x şi y ale înregistrării pot memora
 coordonatele carteziene ale unui punct din planul xOy. Scrieţi o
@@ -103,7 +102,6 @@ void solutie5(){
     }
 }
 
-///SUB3
 /*
 Pentru definiţia de mai jos a subprogramului f, ce se afişează ca urmare a apelului
 f(121,1);? (6p.)
@@ -143,9 +141,48 @@ care sunt divizibile cu n. Dacă fişierul nu conţine niciun astfel de număr, 
 pe ecran mesajul NU EXISTA.
 Exemplu: dacă fişierul bac.txt conţine numerele: 3 100 40 70 25 5 80 6 3798,
 pentru n=10 atunci pe ecran se va afişa: 100 40 70 80
+
 */
 
+void rezolvareVar1(){
+    ifstream f("bac1.txt");
+    int n,x;
+    bool gasit=false;
+    cin>>n;
+    while (f>>x){
+        if (x%n==0){
+            cout<<x<<" ";
+            gasit=true;
+        }
+    }
+    if (gasit==false){
+        cout<<"NU EXISTA";
+    }
+}
 
+/*
+4. Subprogramul sub, cu trei parametri, primeşte prin intermediul parametrilor:
+– v un tablou unidimensional cu cel mult 100 de componente ce memorează numere
+întregi de cel mult 4 cifre fiecare;
+– n un număr natural nenul mai mic sau egal cu 100 ce reprezintă numărul efectiv de
+componente ale tabloului primit prin intermediul parametrului v;
+– a un număr întreg cu cel mult 4 cifre.
+Subprogramul sub returnează numărul componentelor tabloului primit prin intermediul
+parametrului v ale căror valori sunt strict mai mici decât valoarea parametrului a.
+Exemplu: pentru valorile n=5, v=(1,21,9,21,403), a=20 ale parametrilor, în urma
+apelului, subprogramului sub va returna valoarea 2.
+a) Scrieţi definiţia completă a subprogramului sub.
+*/
 
+int sub(int v[],int n,int a)
+{
+    int nr=0;
+    for (int i=0;i<n;i++){
+        if(v[i]<a){
+            nr++;
+        }
+    }
 
+    return nr;
+}
 

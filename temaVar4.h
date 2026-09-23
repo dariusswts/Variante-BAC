@@ -106,6 +106,100 @@ care citeşte numerele din fişierul NR.TXT şi afişează pe ecran, separate pr
 conţine astfel de numere se va afişa pe ecran mesajul NU EXISTA.
 */
 
+/*
+5. Scrieţi un program C/C++ care citeşte de la tastatură un număr natural n (2≤n≤24) şi
+   construieşte în memorie o matrice cu n linii şi n coloane ale cărei elemente vor primi valori
+   după cum urmează:
+
+- elementele aflate pe diagonala principală a matricei vor primi valoarea 0
+- elementele de pe prima coloană, cu excepţia celui aflat pe diagonala principală vor primi
+  valoarea n
+- elementele de pe a doua coloană, cu excepţia celui aflat pe diagonala principală vor primi
+  valoarea n-1
+  ...
+- elementele de pe ultima coloană, cu excepţia celui aflat pe diagonala principală vor primi valoarea 1 Programul va afişa matricea astfel construită pe ecran, câte o linie a matricei pe câte o linie a ecranului, cu câte un spaţiu între elementele fiecărei linii (ca în exemplu). Exemplu: pentru n=4 se va afişa matricea alăturată &#x20;
+
+vreau o rezolvare simpla pt astea
+*/
+void rezol5(){
+    int n,a[25][25];
+    cin>>n;
+
+    for(int i=0;i<n;i++)
+        for(int j=0;j<n;j++)
+            if(i==j)
+                a[i][j]=0;
+            else
+                a[i][j]=n-j;
+
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+            cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
+}
+
+/*
+3. Fişierul text NR.TXT conţine pe o singură linie, separate prin câte un singur spaţiu, cel mult
+   100 de numere naturale, fiecare număr având cel mult 4 cifre. Scrieţi un program C/C++
+   care citeşte numerele din fişierul NR.TXT şi afişează pe ecran, separate prin câte un spaţiu,
+   în ordine descrescătoare, toate numerele din fişier care au cel mult 2 cifre. Dacă fişierul nu
+   conţine astfel de numere se va afişa pe ecran mesajul NU EXISTA.
+*/
+
+void citireVar4(int v[],int &n){
+    ifstream f("NR.TXT");
+    n=0;
+
+    while(f>>v[n]){
+        n++;
+    }
+
+    f.close();
+}
+
+void sortarevar4(int v[],int n)
+{
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(v[i]<v[j]){
+                swap(v[i],v[j]);
+            }
+        }
+    }
+}
+
+void afisarevar4(int v[],int n)
+{
+    if(n==0){
+        cout<<"NU EXISTA";
+    }
+    else{
+        for(int i=0;i<n;i++){
+            cout<<v[i]<<" ";
+        }
+    }
+}
+
+void rezVar4_3(){
+    int v[100],n,a[100],m=0;
+
+    citireVar4(v,n);
+
+    for(int i=0;i<n;i++)
+    {
+        if(v[i]<=99)
+        {
+            a[m]=v[i];
+            m++;
+        }
+    }
+
+    sortarevar4(a,m);
+    afisarevar4(a,m);
+}
+
 
 
 

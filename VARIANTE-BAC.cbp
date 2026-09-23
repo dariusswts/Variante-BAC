@@ -32,12 +32,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BAC.TXT" />
+		<Unit filename="NR.TXT" />
+		<Unit filename="algortimi-utili.h" />
 		<Unit filename="bac1.txt" />
 		<Unit filename="main.cpp" />
+		<Unit filename="temaVar1.h" />
 		<Unit filename="temaVar2.h" />
 		<Unit filename="temaVar3.h" />
 		<Unit filename="temaVar4.h" />
-		<Unit filename="varianta-1.h" />
+		<Unit filename="temaVar5.h" />
+		<Unit filename="temaVar6.h" />
+		<Unit filename="temaVar7.h" />
+		<Unit filename="temaVar8.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
