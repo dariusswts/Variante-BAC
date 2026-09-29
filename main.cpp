@@ -1,10 +1,10 @@
 
-#include "Var9.h"
-#include "temaVar2.h"
+#include "temaVar11.h"
+#include "temaVar10.h"
 
 
 
 int main()
 {
-    Var9sub(3,5);
+
 }

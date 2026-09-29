@@ -160,6 +160,34 @@ void Var9sub(int n,int k){
     }
 }
 
+/*
+4. Se consideră fişierul BAC.TXT ce conţine cel mult un milion de numere naturale separate
+prin spatii, fiecare număr având cel mult nouă cifre.
+a) Scrieţi un program C/C++ care citeşte toate numerele din fişierul BAC.TXT şi determină,
+folosind un algoritm eficient din punct de vedere timpului de executare, cele mai mari două
+numere de trei cifre care nu se află în fişier. Cele două numere vor fi afişate pe ecran în
+ordine descrescătoare, cu un spaţiu între ele. Dacă nu pot fi determinate două astfel de
+numere, programul va afişa pe ecran valoarea 0.
+Exemplu: dacă fişierul BAC.TXT conţine numerele:
+12 2345 123 67 989 6 999 123 67 989 999
+atunci programul va afişa
+998 997
+*/
+
+void Var9Citire(int v[]){
+    ifstream f("Var9BAC.TXT");
+    int x;
+    while(f>>x){
+        if(x>=100)&&x<=999){
+            v[x]=1;
+        }
+
+    }
+}
+
+
+
+
 
 
 
