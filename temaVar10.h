@@ -154,7 +154,7 @@ int f(int n,int y)
 //1	3	y=4  2 + 3 + 4 + f(0,4)
 //0	4	f(0,4)=0
 
-Calcul final:
+//Calcul final:
 
 //f(3,1)
 //= 2 + 3 + 4 + 0

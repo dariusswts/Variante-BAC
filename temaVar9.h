@@ -178,12 +178,50 @@ void Var9Citire(int v[]){
     ifstream f("Var9BAC.TXT");
     int x;
     while(f>>x){
-        if(x>=100)&&x<=999){
+        if(x>=100&&x<=999){
             v[x]=1;
         }
 
     }
+    f.close();
+
 }
+
+void Var9Afisare(int v[]){
+    int ct=0;
+    bool gasit=false;
+    for(int i=999;i>=100&&gasit==false;i--){
+        if(v[i]==0){
+            cout<<i<<" ";
+            ct++;
+        }
+        if(ct==2){
+            gasit=true;
+            //break;
+        }
+    }
+    if(ct<2){
+        cout<<0;
+    }
+}
+
+//12 2345 123 67 989 6 999 123 67 989 999
+//i=999  i>=100  i    ifv[i]==0{ cout i ct++}  if ct==2 gasit=true
+//999      da   999       nu   --------------------
+//998      da   998       da     cout<<998 ct=1 -----------------
+//997      da   997       da     cout<<997 ct=2    ct==2  gasit==true
+//---------
+// afisare 998 997
+
+
+
+void rezVar9ex4(){
+    int v[1000]={0};
+    Var9Citire(v);
+    Var9Afisare(v);
+}
+
+
 
 
 

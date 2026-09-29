@@ -79,11 +79,11 @@ Se afișează:
 
 //2. Pentru funcţia f definită alăturat, stabiliţi care
 //este valoarea f(5). Dar f(23159)? (6p.)
-int f(int n){
+int fVar11ex2(int n){
  int c;
  if (n==0) return 9;
  else
- {c=f(n/10);
+ {c=fVar11ex2(n/10);
  if (n%10<c) return n%10;
  else return c;
  }
@@ -149,9 +149,9 @@ void afiVar11(int v[], int n)
         cout<<v[i]<<" ";
     }
 }
-void rezVar10(){
+void rezVar11(){
     int n,v[30000];
-    citVar10(n,v);
+    citVar11(n,v);
     Var11ex3(v,n);
     afiVar11(v,n);
 }
