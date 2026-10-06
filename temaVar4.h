@@ -77,13 +77,13 @@ Exemplu: pentru n=4 se va afişa matricea alăturată. (10p.)
 ce se afişează ca urmare a apelului
 f(15,2);? (6p.)
 */
-void Varf (int n, int x)
+void Var4f (int n, int x)
 {  if(x>n)
   cout<<0;
   else
-  if(x%4<=1) f(n,x+1);
+  if(x%4<=1) Var4f(n,x+1);
   else
-  { f(n,x+3);
+  { fVar4f(n,x+3);
   cout<<1;
   }
 }

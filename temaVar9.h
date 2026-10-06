@@ -214,6 +214,13 @@ void Var9Afisare(int v[]){
 // afisare 998 997
 
 
+///solutia fara fisier
+void solutie2Var9ex4(){
+    int nr=0;
+    for(int i=999;)
+
+}
+
 
 void rezVar9ex4(){
     int v[1000]={0};

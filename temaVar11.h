@@ -11,10 +11,12 @@ expresiile C/C++ de mai jos are valoarea 0? (4p.)
 a. 3*x-4*y==0 b. (x+y)/2 > x%y+1
 c. !(x/2+2==y) d. x-y+3!=0
 
-a.
+respuns c
 
-3*8-4*6 = 24-24 = 0
-raaspuns A
+!(8/2+2==6)
+!(4+2==6)
+!(6==6) ==1 fiind diferit reiese 0
+raspuns C
 
 
 2. Se consideră algoritmul alăturat, descris în

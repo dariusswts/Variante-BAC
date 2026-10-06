@@ -27,8 +27,11 @@ n valoarea 23456 şi pentru k valoarea 3. (4p.)
 n=23456 > cifra 6 este pară > k=2
 n=2345  > cifra 5 este impară > nr=4
 n=234   > cifra 4 este pară > k=1
-n=23    > cifra 3 este impară > nr=2*10+2=42
+n=23    > cifra 3 este impară > nr=2*10+2=24
 n=2     > cifra 2 este pară > k=0
+
+rezultat: 24
+
 
  (numere naturale nenule)
  nrÅ0

@@ -1,12 +1,12 @@
 
-#include "temaVar11.h"
-#include "temaVar10.h"
-#include "temaVar9.h"
+#include "temaVar13.h"
+#include "temaVar12.h"
+#include "temaVar14.h"
 
 
 
 int main()
 {
-    rezVar9ex4();
+
 
 }

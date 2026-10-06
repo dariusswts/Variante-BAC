@@ -70,7 +70,7 @@ cu ultimul, al doilea cu penultimul, etc). (6p.)
 void Var5f ( int a, int b)
 {
     if(a<=b){
-      f(a+1,b-2); cout<<’*’;
+      Var5f(a+1,b-2); cout<<’*’;
       }
  else cout<<b;
 }
