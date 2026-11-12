@@ -1,0 +1,5 @@
+variante/bin/
+variante/obj/
+*.depend
+*.layout
+.DS_Store
