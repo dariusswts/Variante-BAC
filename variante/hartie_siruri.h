@@ -23,16 +23,32 @@ afișat succesiunea de caractere eied*eael* scrieți care este șirul de caracte
 eied*eael*
 
 i   caracter afisat   caracter initial
-0          e                  e
+0
 1          i                  i
-2          e                  e
+2          e
 3          d                  d
 4          *                  e
-5          e                  e
-6
+5          e
+6          a                  a
+7          e
+8          l                  l
+9          *                  e
+
+raspuns ideale
 
 
 */
+
+
+void v003_II2(){
+
+   char s[200]="ideale";
+   int n,i;
+   n=strlen(s);
+   for(i=0;i<n;i++)
+     if (s[i]=='e') cout<<'*';
+     else cout<<'e'<<s[i];
+}
 
 
 

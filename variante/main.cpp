@@ -22,9 +22,9 @@
 using namespace std;
 
 int main() {
-    int v[5]={1,32,43,21,7};
-    int n=5;
-    v40_2(v,n);
-
+    //int v[5]={1,32,43,21,7};
+    //int n=5;
+    //v40_2(v,n);
+    v003_II2();
 	return 0;
 }

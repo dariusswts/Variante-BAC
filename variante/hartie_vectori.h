@@ -78,31 +78,7 @@ d. în tablou sunt memorate numai valori strict pozitive
 */
 
 
-///1.3
 
-/*
-Varianta 75 · III.2 — Secvență cu interschimbări
-Variabilele i , j și aux sunt de tip întreg, iar elementele tabloului unidimensional x sunt următoarele:
-x0 =10, x1 =5, x2 =-6, x3 =7, x4 =0, x5 =-2.
-Ce valori se vor afișa în urma executării secvenței de program alăturate?
-  for(i = 0; i < 4; i++)
-    for(j = i + 1; j < 6; j++)
-       if(x[i] > x[j]){
-         aux = x[i];
-         x[i] = x[j];
-         x[j] = aux;
-       }
-  for(i = 0; i < 6; i++)
-    cout<<x[i]<<" ";
-
-
-x0 =10, x1 =5, x2 =-6, x3 =7, x4 =0, x5 =-2.
-
-10 5 -6 7 0 -2
-
-
-
-*/
 
 
 
