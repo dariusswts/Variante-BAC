@@ -43,7 +43,25 @@ i  i<5  j   j>i   v[i]<v[j]   vectorul        j--  i++
 
 raspuns 13 5 2 1 4
 
+numar dfe intershimbari 3
+
+exemplu de 5 valori cu 0 interschimbari este 10 9 8 7 6
+
 */
+
+void v40_2(int v[10],int n){
+   for(int i=1;i<5;i++)
+    for(int j=5;j>i;j--)
+      if(v[i]<v[j]){
+        int aux=v[i];
+        v[i]=v[j];
+        v[j]=aux;
+      }
+
+   for(int i=1;i<=n;i++){
+     cout<<v[i]<<" ";
+   }
+}
 
 
 ///1.2
