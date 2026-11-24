@@ -18,11 +18,41 @@
 #include "cuvinte_siruri.h"
 #include "transformari_siruri.h"
 #include "hartie_recursivitate.h"
+#include "recapitulare-siruri.h"
 #include "hartie_backtracking.h"
+#include "recapitulare-recursivitate.h"
+#include "recapitulare-backtraking.h"
+#include "recapitulare-matrici.h"
 #include "recapitulare-vectori.h"
 using namespace std;
 
 int main() {
+
+v012_II4();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	return 0;
 }

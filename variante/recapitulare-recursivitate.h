@@ -6,12 +6,12 @@
 using namespace std;
 
 ///1
-void f(long n,int i)
+void f1(long n,int i)
 {
     if(n!=0){
         if(n%3>0){
             cout<<i;
-            f(n/3,i+1);
+            f1(n/3,i+1);
         }
     }
 }
