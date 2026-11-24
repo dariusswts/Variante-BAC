@@ -19,13 +19,10 @@
 #include "transformari_siruri.h"
 #include "hartie_recursivitate.h"
 #include "hartie_backtracking.h"
+#include "recapitulare-vectori.h"
 using namespace std;
 
 int main() {
-    //int v[5]={1,32,43,21,7};
-    //int n=5;
-    //v40_2(v,n);
-    //v003_II2();
-    v001_III2();
+
 	return 0;
 }

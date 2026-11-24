@@ -32,27 +32,34 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
-		<Unit filename="hartie_vectori.h" />
-		<Unit filename="parcurgere.h" />
-		<Unit filename="modificare.h" />
-		<Unit filename="sortare.h" />
-		<Unit filename="frecventa.h" />
-		<Unit filename="cautare_binara.h" />
-		<Unit filename="interclasare.h" />
-		<Unit filename="secvente.h" />
-		<Unit filename="hartie_matrici.h" />
-		<Unit filename="parcurgere_matrici.h" />
-		<Unit filename="diagonale_matrici.h" />
-		<Unit filename="transformari_matrici.h" />
-		<Unit filename="generare_matrici.h" />
-		<Unit filename="umplere_matrici.h" />
-		<Unit filename="hartie_siruri.h" />
 		<Unit filename="caractere_siruri.h" />
+		<Unit filename="cautare_binara.h" />
 		<Unit filename="cuvinte_siruri.h" />
-		<Unit filename="transformari_siruri.h" />
-		<Unit filename="hartie_recursivitate.h" />
+		<Unit filename="date/056-3/numere.txt" />
+		<Unit filename="date/079-4/numere.in" />
+		<Unit filename="diagonale_matrici.h" />
+		<Unit filename="frecventa.h" />
+		<Unit filename="generare_matrici.h" />
 		<Unit filename="hartie_backtracking.h" />
+		<Unit filename="hartie_matrici.h" />
+		<Unit filename="hartie_recursivitate.h" />
+		<Unit filename="hartie_siruri.h" />
+		<Unit filename="hartie_vectori.h" />
+		<Unit filename="interclasare.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="modificare.h" />
+		<Unit filename="parcurgere.h" />
+		<Unit filename="parcurgere_matrici.h" />
+		<Unit filename="recapitulare-backtraking.h" />
+		<Unit filename="recapitulare-matrici.h" />
+		<Unit filename="recapitulare-recursivitate.h" />
+		<Unit filename="recapitulare-siruri.h" />
+		<Unit filename="recapitulare-vectori.h" />
+		<Unit filename="secvente.h" />
+		<Unit filename="sortare.h" />
+		<Unit filename="transformari_matrici.h" />
+		<Unit filename="transformari_siruri.h" />
+		<Unit filename="umplere_matrici.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
